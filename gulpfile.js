@@ -7,7 +7,7 @@ const uglify = require('gulp-uglify');
 
 function compilaSass() {
     return gulp.src('./source/styles/main.scss')
-        .pipe(dartSass({ outputStyle: 'compressed' })
+        .pipe(dartSass({ outputStyle: 'compressed' }))
         .pipe(gulp.dest('./build/styles'))
 }
 
